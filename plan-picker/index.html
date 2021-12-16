@@ -16,10 +16,8 @@
       <h2 class="subtitle">
         We travel the world to source the very best single origin coffee for you
       </h2>
+      <plan-picker></plan-picker>
 
-      <div class="plans">
-        <plan v-for="plan in plans" :name="plan">
-      </div>
     </div>
   </div>
   <script type="text/x-template" id="plan-template">
@@ -30,6 +28,11 @@
             </span>
           </div>
         </div>
+  </script>
+  <script type="text/x-template" id="plan-picker-template">
+      <div class="plans">
+        <plan v-for="plan in plans" :name="plan">
+      </div>
   </script>
   <script src="https://unpkg.com/vue@3"></script>
   <script src="app.js"></script>
